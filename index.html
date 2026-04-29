@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hemingway's Bar &amp; Kitchen — Sarajevo</title>
   <meta name="description" content="Hemingway's Bar &amp; Kitchen. A cinematic bar and kitchen in Sarajevo. Open daily until midnight. Zmaja od Bosne 13.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍸</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero-bg.jpg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -47,7 +49,7 @@
     <p class="hero-tagline animate">Open daily until midnight &middot; Dine in &middot; Delivery</p>
   </div>
   <div class="hero-footer">
-    <a href="tel:062610097" class="hero-cta animate">Reserve a table &rarr;</a>
+    <a href="tel:+38762610097" class="hero-cta animate">Reserve a table &rarr;</a>
     <span class="hero-scroll animate" aria-hidden="true">Scroll to explore &darr;</span>
   </div>
 </section>
@@ -76,13 +78,13 @@
     <div class="menu-header">
       <h2 class="menu-title animate">What we serve</h2>
       <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-        <button class="menu-tab menu-tab--active" data-tab="cocktails" role="tab" aria-selected="true" aria-controls="panel-cocktails">Cocktails</button>
-        <button class="menu-tab" data-tab="food" role="tab" aria-selected="false" aria-controls="panel-food">Food</button>
-        <button class="menu-tab" data-tab="wine" role="tab" aria-selected="false" aria-controls="panel-wine">Wine</button>
+        <button class="menu-tab menu-tab--active" data-tab="cocktails" role="tab" aria-selected="true" aria-controls="panel-cocktails" id="tab-cocktails">Cocktails</button>
+        <button class="menu-tab" data-tab="food" role="tab" aria-selected="false" aria-controls="panel-food" id="tab-food">Food</button>
+        <button class="menu-tab" data-tab="wine" role="tab" aria-selected="false" aria-controls="panel-wine" id="tab-wine">Wine</button>
       </div>
     </div>
 
-    <div id="panel-cocktails" class="menu-panel menu-panel--active" role="tabpanel">
+    <div id="panel-cocktails" class="menu-panel menu-panel--active" role="tabpanel" aria-labelledby="tab-cocktails">
       <div class="menu-grid">
         <div class="menu-item animate">
           <div class="menu-item-info"><span class="menu-item-name">Old Fashioned</span><span class="menu-item-desc">Bourbon &middot; bitters &middot; orange peel</span></div>
@@ -111,7 +113,7 @@
       </div>
     </div>
 
-    <div id="panel-food" class="menu-panel" role="tabpanel" hidden>
+    <div id="panel-food" class="menu-panel" role="tabpanel" aria-labelledby="tab-food" hidden>
       <div class="menu-grid">
         <div class="menu-item animate">
           <div class="menu-item-info"><span class="menu-item-name">Burrata</span><span class="menu-item-desc">Cherry tomatoes &middot; basil oil &middot; sea salt</span></div>
@@ -132,7 +134,7 @@
       </div>
     </div>
 
-    <div id="panel-wine" class="menu-panel" role="tabpanel" hidden>
+    <div id="panel-wine" class="menu-panel" role="tabpanel" aria-labelledby="tab-wine" hidden>
       <div class="menu-grid">
         <div class="menu-item animate">
           <div class="menu-item-info"><span class="menu-item-name">Blatina</span><span class="menu-item-desc">Bosnian red &middot; full-bodied &middot; dry</span></div>
@@ -163,7 +165,7 @@
     <h2 class="gallery-title animate">The atmosphere</h2>
     <div class="gallery-grid">
       <div class="gallery-item gallery-item--tall animate" tabindex="0" role="button" aria-label="View interior photo">
-        <img src="images/gallery-1.jpg" alt="Hemingway's interior" loading="lazy">
+        <img src="images/gallery-1.jpg" alt="Espresso martini on the bar at Hemingway's" loading="lazy">
       </div>
       <div class="gallery-item animate" tabindex="0" role="button" aria-label="View cocktail photo">
         <img src="images/gallery-2.jpg" alt="Cocktail at Hemingway's" loading="lazy">
@@ -275,10 +277,10 @@
         </div>
         <div class="contact-item animate">
           <dt class="contact-label">Phone</dt>
-          <dd class="contact-value">062 610 097</dd>
+          <dd class="contact-value"><a href="tel:+38762610097">062 610 097</a></dd>
         </div>
       </dl>
-      <a href="tel:062610097" class="contact-cta animate">Call to reserve &rarr;</a>
+      <a href="tel:+38762610097" class="contact-cta animate">Call to reserve &rarr;</a>
     </div>
     <div class="contact-map animate">
       <iframe
