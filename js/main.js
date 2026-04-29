@@ -16,14 +16,19 @@ function openMobileMenu() {
   mobileMenu.removeAttribute('aria-hidden');
   hamburger.setAttribute('aria-expanded', 'true');
   document.body.style.overflow = 'hidden';
+  mobileClose.focus();
 }
 function closeMobileMenu() {
   mobileMenu.classList.remove('is-open');
   mobileMenu.setAttribute('aria-hidden', 'true');
   hamburger.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
+  hamburger.focus();
 }
 
 hamburger.addEventListener('click', openMobileMenu);
 mobileClose.addEventListener('click', closeMobileMenu);
 mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileMenu));
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) closeMobileMenu();
+});

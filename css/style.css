@@ -48,6 +48,7 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
 }
 #nav.nav--solid {
   background: rgba(10,10,10,0.95);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   padding-top: 14px;
   padding-bottom: 14px;
@@ -93,7 +94,7 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-.mobile-menu.is-open { opacity: 1; pointer-events: all; }
+.mobile-menu.is-open { opacity: 1; pointer-events: auto; }
 .mobile-close {
   position: absolute;
   top: 20px; right: var(--inner-pad);
@@ -113,3 +114,4 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
   transition: color 0.2s;
 }
 .mobile-nav a:hover { color: var(--w66); }
+section[id] { scroll-margin-top: 70px; }
