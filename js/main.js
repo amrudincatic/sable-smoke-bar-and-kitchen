@@ -107,3 +107,15 @@ overlay.addEventListener('click', e => { if (e.target === overlay) closeOverlay(
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeOverlay();
 });
+
+/* ── Scroll animations ── */
+const animObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      animObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.animate').forEach(el => animObserver.observe(el));
