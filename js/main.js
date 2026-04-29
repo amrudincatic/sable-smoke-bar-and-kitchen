@@ -32,3 +32,10 @@ mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) closeMobileMenu();
 });
+
+/* ── Hero stagger + background ── */
+document.querySelectorAll('.hero-word').forEach((word, i) => {
+  setTimeout(() => word.classList.add('is-visible'), 300 + i * 160);
+});
+const heroBg = document.querySelector('.hero-bg');
+if (heroBg) heroBg.classList.add('loaded');
