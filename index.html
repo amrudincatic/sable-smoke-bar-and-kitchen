@@ -11,7 +11,297 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- sections go here -->
+  <!-- ── Navigation ── -->
+<nav id="nav" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo">Hemingway's</a>
+  <div class="nav-links">
+    <a href="#menu">Menu</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <button id="mobile-close" class="mobile-close" aria-label="Close menu">&#x2715;</button>
+  <nav class="mobile-nav">
+    <a href="#menu">Menu</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<!-- ── 01 Hero ── -->
+<section id="hero" class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow animate">Sarajevo &middot; Zmaja od Bosne 13</p>
+    <h1 class="hero-title">
+      <span class="hero-word">Bar</span>
+      <span class="hero-word hero-word--muted">&amp;</span>
+      <span class="hero-word">Kitchen</span>
+    </h1>
+    <div class="hero-rule" aria-hidden="true"></div>
+    <p class="hero-tagline animate">Open daily until midnight &middot; Dine in &middot; Delivery</p>
+  </div>
+  <div class="hero-footer">
+    <a href="tel:062610097" class="hero-cta animate">Reserve a table &rarr;</a>
+    <span class="hero-scroll animate" aria-hidden="true">Scroll to explore &darr;</span>
+  </div>
+</section>
+
+<!-- ── 02 Story ── -->
+<section id="story" class="story">
+  <div class="story-inner">
+    <div class="story-copy">
+      <span class="story-ghost" aria-hidden="true">02</span>
+      <h2 class="story-heading animate">More than a bar.<br>A feeling.</h2>
+      <p class="story-text animate">A place where the city slows down. Hemingway's is Sarajevo's corner for cocktails crafted with care, food made to linger over, and nights that stretch past midnight.</p>
+      <div class="story-stat animate">
+        <span class="story-stat-num">4.3&#9733;</span>
+        <span class="story-stat-label">103 reviews on Google</span>
+      </div>
+    </div>
+    <div class="story-photo animate">
+      <img src="images/interior.jpg" alt="Hemingway's interior" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ── 03 Menu ── -->
+<section id="menu" class="menu-section">
+  <div class="menu-inner">
+    <div class="menu-header">
+      <h2 class="menu-title animate">What we serve</h2>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab menu-tab--active" data-tab="cocktails" role="tab" aria-selected="true" aria-controls="panel-cocktails">Cocktails</button>
+        <button class="menu-tab" data-tab="food" role="tab" aria-selected="false" aria-controls="panel-food">Food</button>
+        <button class="menu-tab" data-tab="wine" role="tab" aria-selected="false" aria-controls="panel-wine">Wine</button>
+      </div>
+    </div>
+
+    <div id="panel-cocktails" class="menu-panel menu-panel--active" role="tabpanel">
+      <div class="menu-grid">
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Old Fashioned</span><span class="menu-item-desc">Bourbon &middot; bitters &middot; orange peel</span></div>
+          <span class="menu-item-price">12 KM</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Hemingway Daiquiri</span><span class="menu-item-desc">White rum &middot; grapefruit &middot; maraschino</span></div>
+          <span class="menu-item-price">13 KM</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Negroni</span><span class="menu-item-desc">Gin &middot; Campari &middot; sweet vermouth</span></div>
+          <span class="menu-item-price">11 KM</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Aperol Spritz</span><span class="menu-item-desc">Aperol &middot; Prosecco &middot; soda &middot; orange</span></div>
+          <span class="menu-item-price">10 KM</span>
+        </div>
+        <div class="menu-item menu-item--hidden animate">
+          <div class="menu-item-info"><span class="menu-item-name">Espresso Martini</span><span class="menu-item-desc">Vodka &middot; coffee liqueur &middot; espresso</span></div>
+          <span class="menu-item-price">12 KM</span>
+        </div>
+        <div class="menu-item menu-item--hidden animate">
+          <div class="menu-item-info"><span class="menu-item-name">Mojito</span><span class="menu-item-desc">Rum &middot; lime &middot; mint &middot; soda</span></div>
+          <span class="menu-item-price">10 KM</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-food" class="menu-panel" role="tabpanel" hidden>
+      <div class="menu-grid">
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Burrata</span><span class="menu-item-desc">Cherry tomatoes &middot; basil oil &middot; sea salt</span></div>
+          <span class="menu-item-price">14 KM</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Beef Sliders</span><span class="menu-item-desc">Angus beef &middot; caramelised onion &middot; aioli</span></div>
+          <span class="menu-item-price">16 KM</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Truffle Fries</span><span class="menu-item-desc">Crispy fries &middot; truffle oil &middot; parmesan</span></div>
+          <span class="menu-item-price">9 KM</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Charcuterie Board</span><span class="menu-item-desc">Cured meats &middot; cornichons &middot; sourdough</span></div>
+          <span class="menu-item-price">22 KM</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="panel-wine" class="menu-panel" role="tabpanel" hidden>
+      <div class="menu-grid">
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Blatina</span><span class="menu-item-desc">Bosnian red &middot; full-bodied &middot; dry</span></div>
+          <span class="menu-item-price">8 KM / glass</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">&#x17D;ilavka</span><span class="menu-item-desc">Bosnian white &middot; crisp &middot; mineral</span></div>
+          <span class="menu-item-price">8 KM / glass</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">Prosecco</span><span class="menu-item-desc">Italian sparkling &middot; dry</span></div>
+          <span class="menu-item-price">9 KM / glass</span>
+        </div>
+        <div class="menu-item animate">
+          <div class="menu-item-info"><span class="menu-item-name">House Red</span><span class="menu-item-desc">Chef's selection &middot; changes weekly</span></div>
+          <span class="menu-item-price">7 KM / glass</span>
+        </div>
+      </div>
+    </div>
+
+    <button id="menu-expand" class="menu-expand animate">View full menu &darr;</button>
+  </div>
+</section>
+
+<!-- ── 04 Gallery ── -->
+<section id="gallery" class="gallery-section">
+  <div class="gallery-inner">
+    <h2 class="gallery-title animate">The atmosphere</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall animate" tabindex="0" role="button" aria-label="View interior photo">
+        <img src="images/gallery-1.jpg" alt="Hemingway's interior" loading="lazy">
+      </div>
+      <div class="gallery-item animate" tabindex="0" role="button" aria-label="View cocktail photo">
+        <img src="images/gallery-2.jpg" alt="Cocktail at Hemingway's" loading="lazy">
+      </div>
+      <div class="gallery-item animate" tabindex="0" role="button" aria-label="View food photo">
+        <img src="images/gallery-3.jpg" alt="Food at Hemingway's" loading="lazy">
+      </div>
+      <div class="gallery-item animate" tabindex="0" role="button" aria-label="View bar photo">
+        <img src="images/gallery-4.jpg" alt="The bar at Hemingway's" loading="lazy">
+      </div>
+      <div class="gallery-item animate" tabindex="0" role="button" aria-label="View night vibe photo">
+        <img src="images/gallery-5.jpg" alt="Night at Hemingway's" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="gallery-overlay" class="gallery-overlay" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button id="overlay-close" class="overlay-close" aria-label="Close photo">&#x2715;</button>
+  <img id="overlay-img" src="" alt="" class="overlay-img">
+</div>
+
+<!-- ── 05 Events ── -->
+<section id="events" class="events-section">
+  <div class="events-inner">
+    <div class="events-header">
+      <h2 class="events-title animate">Upcoming nights</h2>
+      <p class="events-sub animate">EDM &middot; Hip Hop &middot; Live Sets</p>
+    </div>
+    <ul class="events-list">
+      <li class="event-row animate">
+        <span class="event-date">09</span>
+        <div class="event-divider" aria-hidden="true"></div>
+        <div class="event-info">
+          <span class="event-name">Friday Night Sessions</span>
+          <span class="event-meta">May 2026 &middot; Doors 9PM &middot; Free entry</span>
+        </div>
+        <span class="event-tag">EDM</span>
+      </li>
+      <li class="event-row animate">
+        <span class="event-date">16</span>
+        <div class="event-divider" aria-hidden="true"></div>
+        <div class="event-info">
+          <span class="event-name">Late Night with Nadar</span>
+          <span class="event-meta">May 2026 &middot; Doors 10PM &middot; Free entry</span>
+        </div>
+        <span class="event-tag">Hip Hop</span>
+      </li>
+      <li class="event-row animate">
+        <span class="event-date">23</span>
+        <div class="event-divider" aria-hidden="true"></div>
+        <div class="event-info">
+          <span class="event-name">Pop Culture Mix</span>
+          <span class="event-meta">May 2026 &middot; Doors 9PM &middot; Free entry</span>
+        </div>
+        <span class="event-tag">Mixed</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── 06 Reviews ── -->
+<section id="reviews" class="reviews-section">
+  <div class="reviews-inner">
+    <div class="reviews-header">
+      <h2 class="reviews-title animate">What people say</h2>
+      <div class="reviews-score animate" aria-label="4.3 out of 5, 103 Google reviews">
+        <span class="reviews-score-num">4.3</span>
+        <span class="reviews-score-label">103 Google reviews</span>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card animate">
+        <p class="review-stars" aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <blockquote class="review-text">"Definitely one of the best spots in Sarajevo. The food is always delicious, the atmosphere cozy, and the location perfect."</blockquote>
+        <cite class="review-author">An&#273;elka Z.</cite>
+      </div>
+      <div class="review-card animate">
+        <p class="review-stars" aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <blockquote class="review-text">"Nadar was truly a great host. Their DJ choices are all perfect. It is a solid pop culture combination and not a place to be missed!"</blockquote>
+        <cite class="review-author">Leo &middot; Local Guide</cite>
+      </div>
+      <div class="review-card animate">
+        <p class="review-stars" aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <blockquote class="review-text">"The atmosphere was warm and welcoming. The staff were incredibly friendly, making sure we had everything we needed."</blockquote>
+        <cite class="review-author">Lejla C.</cite>
+      </div>
+      <a href="https://www.google.com/maps/place/Hemingway%27s+Bar+%26+Kitchen/@43.8549453,18.3966404,17z/" target="_blank" rel="noopener noreferrer" class="review-card review-card--link animate" aria-label="Read all 103 reviews on Google">
+        <span class="review-link-num">103</span>
+        <span class="review-link-label">reviews on Google &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── 07 Contact ── -->
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <h2 class="contact-title animate">Find us</h2>
+      <dl class="contact-list">
+        <div class="contact-item animate">
+          <dt class="contact-label">Address</dt>
+          <dd class="contact-value">Zmaja od Bosne 13,<br>Sarajevo 71000</dd>
+        </div>
+        <div class="contact-item animate">
+          <dt class="contact-label">Hours</dt>
+          <dd class="contact-value">Open daily<br>until midnight</dd>
+        </div>
+        <div class="contact-item animate">
+          <dt class="contact-label">Phone</dt>
+          <dd class="contact-value">062 610 097</dd>
+        </div>
+      </dl>
+      <a href="tel:062610097" class="contact-cta animate">Call to reserve &rarr;</a>
+    </div>
+    <div class="contact-map animate">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.6!2d18.3966404!3d43.8549453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c90bdd32c359%3A0xb4db349bbf31cdd!2sHemingway%27s%20Bar%20%26%20Kitchen!5e0!3m2!1sen!2sba!4v1"
+        width="100%" height="100%" style="border:0;"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Hemingway's Bar &amp; Kitchen on Google Maps"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <span class="footer-logo">Hemingway's Bar &amp; Kitchen</span>
+  <nav class="footer-nav" aria-label="Footer navigation">
+    <a href="#menu">Menu</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+    <a href="https://hemingways.cc" target="_blank" rel="noopener noreferrer">hemingways.cc</a>
+  </nav>
+</footer>
   <script src="js/main.js"></script>
 </body>
 </html>
