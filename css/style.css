@@ -1,0 +1,35 @@
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+button { background: none; border: none; cursor: pointer; color: inherit; font: inherit; }
+
+/* ── Custom properties ── */
+:root {
+  --bg:       #0a0a0a;
+  --bg-alt:   #0d0d0d;
+  --bg-deep:  #080808;
+  --white:    #ffffff;
+  --w66:      rgba(255,255,255,0.66);
+  --w44:      rgba(255,255,255,0.44);
+  --w22:      rgba(255,255,255,0.22);
+  --w11:      rgba(255,255,255,0.11);
+  --w06:      rgba(255,255,255,0.06);
+  --border:   rgba(255,255,255,0.09);
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'Inter', system-ui, sans-serif;
+
+  --section-pad: clamp(80px, 10vw, 140px);
+  --inner-max:   1200px;
+  --inner-pad:   clamp(24px, 6vw, 80px);
+}
