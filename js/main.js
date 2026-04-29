@@ -39,3 +39,34 @@ document.querySelectorAll('.hero-word').forEach((word, i) => {
 });
 const heroBg = document.querySelector('.hero-bg');
 if (heroBg) heroBg.classList.add('loaded');
+
+/* ── Menu tabs ── */
+document.querySelectorAll('.menu-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.tab;
+    document.querySelectorAll('.menu-tab').forEach(t => {
+      t.classList.remove('menu-tab--active');
+      t.setAttribute('aria-selected', 'false');
+    });
+    document.querySelectorAll('.menu-panel').forEach(p => {
+      p.classList.remove('menu-panel--active');
+      p.hidden = true;
+    });
+    tab.classList.add('menu-tab--active');
+    tab.setAttribute('aria-selected', 'true');
+    const panel = document.getElementById(`panel-${target}`);
+    panel.classList.add('menu-panel--active');
+    panel.hidden = false;
+  });
+});
+
+/* ── Menu expand ── */
+const menuExpandBtn = document.getElementById('menu-expand');
+if (menuExpandBtn) {
+  menuExpandBtn.addEventListener('click', () => {
+    document.querySelectorAll('.menu-item--hidden').forEach(item => {
+      item.classList.remove('menu-item--hidden');
+    });
+    menuExpandBtn.style.display = 'none';
+  });
+}
