@@ -624,8 +624,10 @@ section[id] { scroll-margin-top: 70px; }
   border-top: 1px solid var(--border);
   padding: 1.5rem var(--inner-pad);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 0 1rem;
 }
 .footer-logo {
   font-family: var(--font-serif);
@@ -643,6 +645,21 @@ section[id] { scroll-margin-top: 70px; }
   transition: color 0.2s;
 }
 .footer-nav a:hover { color: var(--w66); }
+.footer-credit {
+  width: 100%;
+  text-align: center;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--w22);
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+.footer-credit a {
+  color: var(--w44);
+  transition: color 0.2s;
+}
+.footer-credit a:hover { color: var(--white); }
 
 /* ── Scroll animations ── */
 .animate {
