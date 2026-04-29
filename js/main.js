@@ -70,3 +70,40 @@ if (menuExpandBtn) {
     menuExpandBtn.style.display = 'none';
   });
 }
+
+/* ── Gallery overlay ── */
+const overlay = document.getElementById('gallery-overlay');
+const overlayImg = document.getElementById('overlay-img');
+
+function openOverlay(src, alt) {
+  overlayImg.src = src;
+  overlayImg.alt = alt;
+  overlay.hidden = false;
+  requestAnimationFrame(() => overlay.classList.add('is-open'));
+  document.body.style.overflow = 'hidden';
+}
+function closeOverlay() {
+  overlay.classList.remove('is-open');
+  document.body.style.overflow = '';
+  setTimeout(() => { overlay.hidden = true; }, 300);
+}
+
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const img = item.querySelector('img');
+    openOverlay(img.src, img.alt);
+  });
+  item.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const img = item.querySelector('img');
+      openOverlay(img.src, img.alt);
+    }
+  });
+});
+
+document.getElementById('overlay-close').addEventListener('click', closeOverlay);
+overlay.addEventListener('click', e => { if (e.target === overlay) closeOverlay(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeOverlay();
+});
