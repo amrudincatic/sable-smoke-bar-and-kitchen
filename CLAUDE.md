@@ -50,7 +50,7 @@ Menu items and prices are also hardcoded. Two cocktail items (Espresso Martini, 
 
 ### Images
 
-All images are in [images/](images/). Real venue photos (gallery-1/2/3, hero-bg, interior) were sourced from Hemingway's Google Business profile. gallery-4 and gallery-5 are Unsplash placeholders.
+All images are in [images/](images/). gallery-1/2/3, hero-bg, and interior are venue photos; gallery-4 and gallery-5 are Unsplash placeholders.
 
 ### Special characters
 

@@ -1,4 +1,4 @@
-// Hemingway's Bar & Kitchen — main.js
+// Sable & Smoke — main.js
 
 /* ── Navigation scroll ── */
 const nav = document.getElementById('nav');
