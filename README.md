@@ -109,6 +109,16 @@ Change the theme by editing these values in one place.
 
 The site is served from the repository root of the `main` branch via **GitHub Pages**. Any push to `main` redeploys automatically. A `.vercel` config is also present for deploying to Vercel as an alternative.
 
+## Quality
+
+Audited with Lighthouse (desktop, 2026-07-18):
+
+| Accessibility | Best Practices | SEO |
+|:---:|:---:|:---:|
+| 100 | 100 | 100 |
+
+Core Web Vitals: LCP ~1.6 s, CLS 0.00, TTFB ~18 ms.
+
 ## License
 
 Released under the [MIT License](LICENSE) - Copyright (c) 2026 Amrudin Catic.

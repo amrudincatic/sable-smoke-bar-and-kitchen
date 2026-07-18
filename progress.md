@@ -70,6 +70,8 @@ Chronological summary of the work, grouped by what shipped.
 ### 9. Client-readiness polish
 - Removed a dead footer link (the placeholder `sableandsmoke.example`, which would not resolve).
 - Converted the hero and interior photos to WebP with JPEG fallbacks (`image-set()` for the CSS hero background, `<picture>` for the interior image), trimming ~200 KB of page weight. The `.jpg` originals are kept for the fallbacks and the social-preview (og:image) tag.
+- Fixed all nine WCAG color-contrast failures (footer text and links, inactive menu tabs, and the decorative "02") by raising their opacity tokens to pass AA.
+- Re-audited the live site with Lighthouse (desktop): **Accessibility 100, Best Practices 100, SEO 100**, plus Core Web Vitals LCP ~1.6 s, CLS 0.00, TTFB ~18 ms.
 
 ---
 
@@ -79,7 +81,8 @@ Chronological summary of the work, grouped by what shipped.
 - ✅ Documentation added (`README.md`, `progress.md`).
 - ✅ Repository public, GitHub Pages live.
 - ✅ MIT licensed; repository cleaned up for public showcase.
-- ✅ Client-readiness polish: dead footer link removed; hero and interior served as WebP.
+- ✅ Client-readiness polish: dead footer link removed; hero and interior served as WebP; color contrast fixed.
+- ✅ Lighthouse (desktop): Accessibility 100, Best Practices 100, SEO 100; LCP ~1.6 s, CLS 0.00.
 
 ## Possible next steps
 
