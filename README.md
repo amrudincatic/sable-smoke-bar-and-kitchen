@@ -111,13 +111,18 @@ The site is served from the repository root of the `main` branch via **GitHub Pa
 
 ## Quality
 
-Audited with Lighthouse (desktop, 2026-07-18):
+Audited with Lighthouse, 2026-07-18. Category scores (desktop):
 
 | Accessibility | Best Practices | SEO |
 |:---:|:---:|:---:|
 | 100 | 100 | 100 |
 
-Core Web Vitals: LCP ~1.6 s, CLS 0.00, TTFB ~18 ms.
+Core Web Vitals, within Google's "Good" thresholds on both desktop and mobile:
+
+| Device | LCP | CLS | TTFB |
+|:---|:---:|:---:|:---:|
+| Desktop | ~1.6 s | 0.00 | ~18 ms |
+| Mobile (4x CPU, Slow 4G) | ~1.6 s | 0.00 | ~2 ms |
 
 ## License
 

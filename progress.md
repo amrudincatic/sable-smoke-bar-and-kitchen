@@ -72,6 +72,7 @@ Chronological summary of the work, grouped by what shipped.
 - Converted the hero and interior photos to WebP with JPEG fallbacks (`image-set()` for the CSS hero background, `<picture>` for the interior image), trimming ~200 KB of page weight. The `.jpg` originals are kept for the fallbacks and the social-preview (og:image) tag.
 - Fixed all nine WCAG color-contrast failures (footer text and links, inactive menu tabs, and the decorative "02") by raising their opacity tokens to pass AA.
 - Re-audited the live site with Lighthouse (desktop): **Accessibility 100, Best Practices 100, SEO 100**, plus Core Web Vitals LCP ~1.6 s, CLS 0.00, TTFB ~18 ms.
+- Also captured mobile Core Web Vitals under throttled conditions (4x CPU, Slow 4G): LCP ~1.6 s, CLS 0.00, TTFB ~2 ms - all within Google's "Good" thresholds.
 
 ---
 
