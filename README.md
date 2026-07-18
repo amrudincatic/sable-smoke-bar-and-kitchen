@@ -55,6 +55,7 @@ A modern hospitality landing page that reads like a print editorial and behaves 
 │   └── main.js       # All interactivity
 ├── images/           # Venue photos + gallery imagery
 ├── CLAUDE.md         # Guidance for AI-assisted edits
+├── LICENSE           # MIT license
 ├── progress.md       # Development log / changelog for this project
 └── README.md         # You are here
 ```
@@ -105,6 +106,10 @@ Change the theme by editing these values in one place.
 ## Deployment
 
 The site is served from the repository root of the `main` branch via **GitHub Pages**. Any push to `main` redeploys automatically. A `.vercel` config is also present for deploying to Vercel as an alternative.
+
+## License
+
+Released under the [MIT License](LICENSE) - Copyright (c) 2026 Amrudin Catic.
 
 ## Credits
 

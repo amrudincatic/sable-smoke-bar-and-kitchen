@@ -60,6 +60,9 @@ Chronological summary of the work, grouped by what shipped.
 - Made the repository public as a portfolio example to share with clients.
 - Enabled **GitHub Pages** (served from `main` / root) so the site is publicly visible.
   - Live URL: https://amrudincatic.github.io/sable-smoke-bar-and-kitchen/
+- Standardized the developer credit to plain "Amrudin Catic" and replaced em dashes with hyphens across the project.
+- Added an MIT `LICENSE` (Copyright 2026 Amrudin Catic).
+- Removed old internal planning docs (`docs/superpowers/`) that referenced the project's previous name.
 
 ---
 
@@ -68,6 +71,7 @@ Chronological summary of the work, grouped by what shipped.
 - ✅ Site complete - all seven sections built, styled, responsive, and accessible.
 - ✅ Documentation added (`README.md`, `progress.md`).
 - ✅ Repository public, GitHub Pages live.
+- ✅ MIT licensed; repository cleaned up for public showcase.
 
 ## Possible next steps
 
