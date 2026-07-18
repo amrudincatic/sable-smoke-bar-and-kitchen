@@ -67,6 +67,10 @@ Chronological summary of the work, grouped by what shipped.
 - Added a hero screenshot (`images/preview.jpg`) to the README.
 - Set the GitHub repo description, homepage link, and topics for a polished public repo page.
 
+### 9. Client-readiness polish
+- Removed a dead footer link (the placeholder `sableandsmoke.example`, which would not resolve).
+- Converted the hero and interior photos to WebP with JPEG fallbacks (`image-set()` for the CSS hero background, `<picture>` for the interior image), trimming ~200 KB of page weight. The `.jpg` originals are kept for the fallbacks and the social-preview (og:image) tag.
+
 ---
 
 ## Current status
@@ -75,12 +79,13 @@ Chronological summary of the work, grouped by what shipped.
 - ✅ Documentation added (`README.md`, `progress.md`).
 - ✅ Repository public, GitHub Pages live.
 - ✅ MIT licensed; repository cleaned up for public showcase.
+- ✅ Client-readiness polish: dead footer link removed; hero and interior served as WebP.
 
 ## Possible next steps
 
 - Replace sample content (menu, prices, reviews, phone, address) with real venue data before any production use.
 - Add a custom domain to GitHub Pages if desired.
-- Optimize/serve images as WebP for faster loads.
+- Convert the remaining gallery JPEGs to WebP too (hero and interior are already done).
 
 ---
 

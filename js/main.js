@@ -51,8 +51,10 @@ document.querySelectorAll('.hero-word').forEach((word, i) => {
 const heroBg = document.querySelector('.hero-bg');
 if (heroBg) {
   const img = new Image();
-  img.onload = () => heroBg.classList.add('loaded');
-  img.src = 'images/hero-bg.jpg';
+  const reveal = () => heroBg.classList.add('loaded');
+  img.onload = reveal;
+  img.onerror = reveal;
+  img.src = 'images/hero-bg.webp';
 }
 
 /* ── Menu expand button ── */

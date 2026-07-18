@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="images/hero-bg.jpg">
+  <link rel="preload" as="image" href="images/hero-bg.webp" type="image/webp">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -86,7 +86,10 @@
       </div>
     </div>
     <div class="story-photo animate">
-      <img src="images/interior.jpg" alt="Sable &amp; Smoke interior" loading="lazy">
+      <picture>
+        <source srcset="images/interior.webp" type="image/webp">
+        <img src="images/interior.jpg" alt="Sable &amp; Smoke interior" loading="lazy">
+      </picture>
     </div>
   </div>
 </section>
@@ -368,7 +371,6 @@
     <a href="#menu">Menu</a>
     <a href="#events">Events</a>
     <a href="#contact">Contact</a>
-    <a href="https://sableandsmoke.example" target="_blank" rel="noopener noreferrer">sableandsmoke.com</a>
   </nav>
   <p class="footer-credit">Built by <a href="https://www.amrudincatic.com" target="_blank" rel="noopener noreferrer">Amrudin Catic</a></p>
 </footer>
