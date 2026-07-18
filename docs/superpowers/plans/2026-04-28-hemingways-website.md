@@ -1,10 +1,10 @@
-# Hemingway's Bar & Kitchen — Website Implementation Plan
+# Hemingway's Bar & Kitchen - Website Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build a cinematic single-page static website for Hemingway's Bar & Kitchen in Sarajevo.
 
-**Architecture:** Pure HTML/CSS/JS, single `index.html` entry, styles in `css/style.css`, interactions in `js/main.js`. Sections scroll linearly. Animations use `IntersectionObserver` — no scroll hijacking, no external libraries.
+**Architecture:** Pure HTML/CSS/JS, single `index.html` entry, styles in `css/style.css`, interactions in `js/main.js`. Sections scroll linearly. Animations use `IntersectionObserver` - no scroll hijacking, no external libraries.
 
 **Tech Stack:** HTML5, CSS3 (Grid, Flexbox, custom properties, `clamp()`), vanilla JS, Google Fonts (Playfair Display + Inter)
 
@@ -13,19 +13,19 @@
 ## File Map
 
 ```
-index.html              — full page HTML, all 7 sections
+index.html              - full page HTML, all 7 sections
 css/
-  style.css             — all styles (reset, vars, sections, animations, responsive)
+  style.css             - all styles (reset, vars, sections, animations, responsive)
 js/
-  main.js               — nav scroll, mobile menu, menu tabs, gallery overlay, IntersectionObserver
+  main.js               - nav scroll, mobile menu, menu tabs, gallery overlay, IntersectionObserver
 images/
-  hero-bg.jpg           — full-width atmospheric photo (hero background)
-  interior.jpg          — interior shot (story section)
-  gallery-1.jpg         — tall feature image (interior)
-  gallery-2.jpg         — cocktail photo
-  gallery-3.jpg         — food photo
-  gallery-4.jpg         — bar counter photo
-  gallery-5.jpg         — night vibe photo
+  hero-bg.jpg           - full-width atmospheric photo (hero background)
+  interior.jpg          - interior shot (story section)
+  gallery-1.jpg         - tall feature image (interior)
+  gallery-2.jpg         - cocktail photo
+  gallery-3.jpg         - food photo
+  gallery-4.jpg         - bar counter photo
+  gallery-5.jpg         - night vibe photo
 ```
 
 ---
@@ -80,7 +80,7 @@ curl -L -o images/gallery-5.jpg "https://images.unsplash.com/photo-1516997121675
 ls -lh images/
 ```
 
-Expected: 7 files, each >50KB. If any are <10KB they likely failed — re-run that curl command.
+Expected: 7 files, each >50KB. If any are <10KB they likely failed - re-run that curl command.
 
 - [ ] **Step 6: Commit**
 
@@ -148,7 +148,7 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
 - [ ] **Step 3: Create `js/main.js`**
 
 ```javascript
-// Hemingway's Bar & Kitchen — main.js
+// Hemingway's Bar & Kitchen - main.js
 ```
 
 - [ ] **Step 4: Create `index.html` with document shell**
@@ -159,7 +159,7 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hemingway's Bar &amp; Kitchen — Sarajevo</title>
+  <title>Hemingway's Bar &amp; Kitchen - Sarajevo</title>
   <meta name="description" content="Hemingway's Bar &amp; Kitchen. A cinematic bar and kitchen in Sarajevo. Open daily until midnight. Zmaja od Bosne 13.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,7 +185,7 @@ Expected: blank black page, no console errors, Google Fonts loaded (check Networ
 
 ```bash
 git add index.html css/style.css js/main.js
-git commit -m "feat: scaffold — base HTML, CSS reset, custom properties"
+git commit -m "feat: scaffold - base HTML, CSS reset, custom properties"
 ```
 
 ---
@@ -193,7 +193,7 @@ git commit -m "feat: scaffold — base HTML, CSS reset, custom properties"
 ## Task 3: Full HTML Structure
 
 **Files:**
-- Modify: `index.html` — replace `<!-- sections go here -->` with complete page HTML
+- Modify: `index.html` - replace `<!-- sections go here -->` with complete page HTML
 
 - [ ] **Step 1: Replace body content in `index.html`**
 
@@ -505,7 +505,7 @@ Expected: unstyled but structured page, all sections visible as plain text, no J
 
 ```bash
 git add index.html
-git commit -m "feat: full HTML structure — all 7 sections"
+git commit -m "feat: full HTML structure - all 7 sections"
 ```
 
 ---
@@ -513,8 +513,8 @@ git commit -m "feat: full HTML structure — all 7 sections"
 ## Task 4: Navigation CSS + JS
 
 **Files:**
-- Modify: `css/style.css` — append nav styles
-- Modify: `js/main.js` — add nav scroll + mobile menu
+- Modify: `css/style.css` - append nav styles
+- Modify: `js/main.js` - add nav scroll + mobile menu
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -602,7 +602,7 @@ git commit -m "feat: full HTML structure — all 7 sections"
 - [ ] **Step 2: Replace `js/main.js` content**
 
 ```javascript
-// Hemingway's Bar & Kitchen — main.js
+// Hemingway's Bar & Kitchen - main.js
 
 /* ── Navigation scroll ── */
 const nav = document.getElementById('nav');
@@ -643,7 +643,7 @@ mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', 
 
 ```bash
 git add css/style.css js/main.js
-git commit -m "feat: navigation — sticky scroll behavior + mobile menu"
+git commit -m "feat: navigation - sticky scroll behavior + mobile menu"
 ```
 
 ---
@@ -651,8 +651,8 @@ git commit -m "feat: navigation — sticky scroll behavior + mobile menu"
 ## Task 5: Hero Section CSS + Animations
 
 **Files:**
-- Modify: `css/style.css` — append hero styles
-- Modify: `js/main.js` — append hero JS
+- Modify: `css/style.css` - append hero styles
+- Modify: `js/main.js` - append hero JS
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -775,7 +775,7 @@ if (heroBg) heroBg.classList.add('loaded');
 
 ```bash
 git add css/style.css js/main.js
-git commit -m "feat: hero section — full-screen, stagger animation, background fade"
+git commit -m "feat: hero section - full-screen, stagger animation, background fade"
 ```
 
 ---
@@ -783,7 +783,7 @@ git commit -m "feat: hero section — full-screen, stagger animation, background
 ## Task 6: Story Section CSS
 
 **Files:**
-- Modify: `css/style.css` — append story styles
+- Modify: `css/style.css` - append story styles
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -869,8 +869,8 @@ git commit -m "feat: story section styles"
 ## Task 7: Menu Section CSS + JS
 
 **Files:**
-- Modify: `css/style.css` — append menu styles
-- Modify: `js/main.js` — append menu tab and expand JS
+- Modify: `css/style.css` - append menu styles
+- Modify: `js/main.js` - append menu tab and expand JS
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -1001,7 +1001,7 @@ if (menuExpandBtn) {
 
 ```bash
 git add css/style.css js/main.js
-git commit -m "feat: menu section — tab switching + expand interaction"
+git commit -m "feat: menu section - tab switching + expand interaction"
 ```
 
 ---
@@ -1009,8 +1009,8 @@ git commit -m "feat: menu section — tab switching + expand interaction"
 ## Task 8: Gallery Section CSS + JS
 
 **Files:**
-- Modify: `css/style.css` — append gallery styles
-- Modify: `js/main.js` — append gallery overlay JS
+- Modify: `css/style.css` - append gallery styles
+- Modify: `js/main.js` - append gallery overlay JS
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -1129,7 +1129,7 @@ document.addEventListener('keydown', e => {
 
 ```bash
 git add css/style.css js/main.js
-git commit -m "feat: gallery section — masonry grid + fullscreen overlay"
+git commit -m "feat: gallery section - masonry grid + fullscreen overlay"
 ```
 
 ---
@@ -1137,7 +1137,7 @@ git commit -m "feat: gallery section — masonry grid + fullscreen overlay"
 ## Task 9: Events + Reviews CSS
 
 **Files:**
-- Modify: `css/style.css` — append events and reviews styles
+- Modify: `css/style.css` - append events and reviews styles
 
 - [ ] **Step 1: Append events styles to `css/style.css`**
 
@@ -1314,7 +1314,7 @@ git commit -m "feat: events and reviews section styles"
 ## Task 10: Contact + Footer CSS
 
 **Files:**
-- Modify: `css/style.css` — append contact and footer styles
+- Modify: `css/style.css` - append contact and footer styles
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -1422,8 +1422,8 @@ git commit -m "feat: contact and footer styles"
 ## Task 11: Scroll Animations
 
 **Files:**
-- Modify: `css/style.css` — append animation CSS
-- Modify: `js/main.js` — append IntersectionObserver
+- Modify: `css/style.css` - append animation CSS
+- Modify: `js/main.js` - append IntersectionObserver
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -1465,7 +1465,7 @@ Scroll slowly through the full page. Each section's content should fade up as it
 
 ```bash
 git add css/style.css js/main.js
-git commit -m "feat: scroll animations — IntersectionObserver fade-up"
+git commit -m "feat: scroll animations - IntersectionObserver fade-up"
 ```
 
 ---
@@ -1473,7 +1473,7 @@ git commit -m "feat: scroll animations — IntersectionObserver fade-up"
 ## Task 12: Mobile Responsiveness
 
 **Files:**
-- Modify: `css/style.css` — append media queries
+- Modify: `css/style.css` - append media queries
 
 - [ ] **Step 1: Append to `css/style.css`**
 
@@ -1554,7 +1554,7 @@ git commit -m "feat: mobile and tablet responsive styles"
 
 ## Final Verification
 
-- [ ] Full scroll in Chrome, Firefox, Safari — all sections render and animate correctly
+- [ ] Full scroll in Chrome, Firefox, Safari - all sections render and animate correctly
 - [ ] No horizontal scroll at any viewport width (add `overflow-x: hidden` to `body` if needed)
 - [ ] All nav anchor links scroll to correct section
 - [ ] "Reserve a table" and "Call to reserve" CTA links are `tel:062610097`
@@ -1565,5 +1565,5 @@ git commit -m "feat: mobile and tablet responsive styles"
 
 ```bash
 git add .
-git commit -m "feat: Hemingway's website — complete"
+git commit -m "feat: Hemingway's website - complete"
 ```

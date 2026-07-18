@@ -1,4 +1,4 @@
-# Progress Log — Sable & Smoke
+# Progress Log - Sable & Smoke
 
 A running record of what was built for **this** project (the Sable & Smoke bar & kitchen
 landing page). It documents the work on this site only.
@@ -25,12 +25,12 @@ Chronological summary of the work, grouped by what shipped.
 - Hardened nav accessibility, added `-webkit-backdrop-filter`, and `scroll-margin-top` for anchor offsets.
 
 ### 3. Section styling
-- **Hero** — full-screen layout, staggered headline reveal, background image that fades in only after load.
-- **Story** — editorial two-column layout with a Google-rating stat.
-- **Menu** — tabbed Cocktails / Food / Wine with tab switching and a "View full menu" expand interaction.
-- **Gallery** — masonry grid plus a full-screen photo overlay.
-- **Events & Reviews** — upcoming-nights list and review cards.
-- **Contact & Footer** — address/hours/phone, embedded Google Map, footer nav.
+- **Hero** - full-screen layout, staggered headline reveal, background image that fades in only after load.
+- **Story** - editorial two-column layout with a Google-rating stat.
+- **Menu** - tabbed Cocktails / Food / Wine with tab switching and a "View full menu" expand interaction.
+- **Gallery** - masonry grid plus a full-screen photo overlay.
+- **Events & Reviews** - upcoming-nights list and review cards.
+- **Contact & Footer** - address/hours/phone, embedded Google Map, footer nav.
 
 ### 4. Interactivity & motion
 - Scroll animations via `IntersectionObserver` (fade-up, applied once per element at threshold 0.15).
@@ -52,7 +52,7 @@ Chronological summary of the work, grouped by what shipped.
 ### 7. Project setup & housekeeping
 - Added `CLAUDE.md` (guidance for AI-assisted edits), project docs, and an updated interior photo.
 - Configured `.gitignore` to exclude `.vercel`, `.superpowers/`, `.DS_Store`, and `.agents/`.
-- Relocated the project from an iCloud folder to `~/GitHub/sable-smoke-bar-and-kitchen` and cleaned up stale path references (source verified location-independent — uses relative paths only).
+- Relocated the project from an iCloud folder to `~/GitHub/sable-smoke-bar-and-kitchen` and cleaned up stale path references (source verified location-independent - uses relative paths only).
 - Added `skills-lock.json` (Claude Code skill version lock).
 
 ### 8. Documentation & publishing (this pass)
@@ -65,7 +65,7 @@ Chronological summary of the work, grouped by what shipped.
 
 ## Current status
 
-- ✅ Site complete — all seven sections built, styled, responsive, and accessible.
+- ✅ Site complete - all seven sections built, styled, responsive, and accessible.
 - ✅ Documentation added (`README.md`, `progress.md`).
 - ✅ Repository public, GitHub Pages live.
 
@@ -78,4 +78,4 @@ Chronological summary of the work, grouped by what shipped.
 
 ---
 
-*Built by Amrudin Ćatić — [amrudincatic.com](https://www.amrudincatic.com)*
+*Built by Amrudin Catic - [amrudincatic.com](https://www.amrudincatic.com)*
