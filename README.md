@@ -4,6 +4,8 @@ A cinematic, single-page website for **Sable & Smoke**, a concept bar and kitche
 
 **Live demo:** https://amrudincatic.github.io/sable-smoke-bar-and-kitchen/
 
+![Sable & Smoke landing page](images/preview.jpg)
+
 > **About this project - read me first**
 >
 > This repository is published publicly as a **portfolio example**. It's here to

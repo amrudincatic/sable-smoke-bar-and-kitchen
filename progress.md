@@ -63,6 +63,9 @@ Chronological summary of the work, grouped by what shipped.
 - Standardized the developer credit to plain "Amrudin Catic" and replaced em dashes with hyphens across the project.
 - Added an MIT `LICENSE` (Copyright 2026 Amrudin Catic).
 - Removed old internal planning docs (`docs/superpowers/`) that referenced the project's previous name.
+- Added Open Graph and Twitter Card meta tags for rich link previews when the URL is shared.
+- Added a hero screenshot (`images/preview.jpg`) to the README.
+- Set the GitHub repo description, homepage link, and topics for a polished public repo page.
 
 ---
 
@@ -78,7 +81,6 @@ Chronological summary of the work, grouped by what shipped.
 - Replace sample content (menu, prices, reviews, phone, address) with real venue data before any production use.
 - Add a custom domain to GitHub Pages if desired.
 - Optimize/serve images as WebP for faster loads.
-- Add Open Graph / social-share meta tags for nicer link previews.
 
 ---
 
