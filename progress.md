@@ -10,6 +10,12 @@ What was done, newest at the top. A running record of what was built for **this*
 
 ---
 
+## 2026-11-04: Old skill copies removed
+
+- The owner's skill cleanup, from the tower: `.agents/` (git-ignored, 14 HyperFrames skills from May, never loaded here) and `skills-lock.json` are gone. The site does not use them.
+
+---
+
 ## 2026-10-14: Unified with the Chata AI Tower standard
 
 - `CLAUDE.md` no longer repeats rules that now load in every session from the global rules (`~/.claude/CLAUDE.md`) and the private root rules (`~/GitHub/CLAUDE.md`): the plain ASCII name rule, the em dash rule (which allowed a hyphen as a dash; the global rule bans that too), the browser check, and the `progress.md` half of the docs rule (the README half stays). Added the pointer line to those rules and a "Status" section with the current state, which moved there from this file.
