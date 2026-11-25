@@ -4,6 +4,9 @@ Open items only. When one is done, remove it here and record it in `progress.md`
 
 ## Next session
 
+Next: nothing required; the items below are optional.
+Waits on: me, the project is archived
+
 Nothing is half-done. The site is complete as a public portfolio example; the items below are optional.
 
 ## Open
